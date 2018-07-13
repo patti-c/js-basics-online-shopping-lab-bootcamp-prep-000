@@ -42,11 +42,13 @@ function viewCart() {
 
 function total() {
   var countup = 0;
-  var totalPrice;
+  var totalPrice = 0;
   if (cart.length > 1) {
     while (countup < cart.length) {
-      
+      totalPrice = totalPrice + cart[countup].itemPrice
+      countup++;
     }
+    return totalPrice
   } else {
     return 'Your shopping cart is empty.';
   }
