@@ -53,10 +53,10 @@ function total() {
   }
 }
 
-addToCart('banana');
-addToCart('sushi');
-addToCart('rice');
-console.log(cart);
+//addToCart('banana');
+//addToCart('sushi');
+//addToCart('rice');
+//console.log(cart);
 
 function removeFromCart(item) {
   var countup = 0;
