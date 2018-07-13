@@ -56,10 +56,22 @@ function total() {
 
 function removeFromCart(item) {
   var countup = 0;
+  var itemFails = 0;
   while (countup < cart.length) {
     if(cart[countup].itemName === item) {
-      cart.splice(countup)
+      cart.splice(countup, (countup + 1));
+      countup++;
+    } else {
+      itemFails++;
+      countup++;
     }
+  }
+  if(itemFails === cart.length){
+    console.log(cart);
+    return 'That item is not in your cart.';
+  } else {
+    console.log(cart);
+    return cart;
   }
 }
 
