@@ -54,9 +54,9 @@ function total() {
   }
 }
 
-addToCart(banana);
-addToCart(sushi);
-addToCart(rice);
+addToCart('banana');
+addToCart('sushi');
+addToCart('rice');
 
 function removeFromCart(item) {
   var countup = 0;
