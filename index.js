@@ -54,6 +54,10 @@ function total() {
   }
 }
 
+addToCart(banana);
+addToCart(sushi);
+addToCart(rice);
+
 function removeFromCart(item) {
   var countup = 0;
   var itemFails = 0;
@@ -75,6 +79,8 @@ function removeFromCart(item) {
     return cart;
   }
 }
+
+removeFromCart(sushi);
 
 function placeOrder(cardNumber) {
   // write your code here
