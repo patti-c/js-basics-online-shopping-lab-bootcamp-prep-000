@@ -1,5 +1,11 @@
 var cart = [];
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function getCart() {
  return cart;
 }
@@ -10,11 +16,28 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var food = { itemName: item, itemPrice : getRandomInt(1, 100) };
+  cart.push(food);
+  console.log(food);
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
+  var countup = 0;
+  var sentence = '';
+  if (cart.length > 1) {
+    while(countup < (cart.length - 1)) {
+      sentence = sentence + `${cart[countup].itemName} at $${cart[countup].itemPrice}, `;
+      countup++;
+    }
+    var lastItem = `${cart[countup].itemName} at $${cart[countup].itemPrice}.`
+    return `In your cart, you have ${sentence}and ${lastItem}`
+  } else if(cart.length === 1){
+    sentence = `${cart[countup].itemName} at $${cart[countup].itemPrice}`;
+    return `In your cart, you have ${sentence}.`;
+  } else if(cart.length === 0){
+    return 'Your shopping cart is empty.'
+  }
 }
 
 function total() {
