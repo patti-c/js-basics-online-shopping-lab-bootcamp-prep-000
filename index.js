@@ -79,8 +79,6 @@ function removeFromCart(item) {
   }
 }
 
-removeFromCart('sushi');
-
 function placeOrder(cardNumber) {
   // write your code here
 }
