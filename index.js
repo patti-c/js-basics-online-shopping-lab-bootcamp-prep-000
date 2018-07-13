@@ -80,7 +80,7 @@ function removeFromCart(item) {
   }
 }
 
-removeFromCart(sushi);
+removeFromCart('sushi');
 
 function placeOrder(cardNumber) {
   // write your code here
