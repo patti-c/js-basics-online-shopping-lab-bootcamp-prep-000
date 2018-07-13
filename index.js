@@ -58,7 +58,7 @@ function removeFromCart(item) {
   var countup = 0;
   while (countup < cart.length) {
     if(cart[countup].itemName === item) {
-      
+      cart.splice()
     }
   }
 }
