@@ -60,7 +60,6 @@ addToCart('rice');
 function removeFromCart(item) {
   var countup = 0;
   var itemFails = 0;
-  console.log(cart)
   while (countup < cart.length) {
     if(cart[countup].itemName === item) {
       cart.splice(countup, (countup + 1));
