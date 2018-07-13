@@ -45,10 +45,10 @@ function total() {
   var totalPrice = 0;
   if (cart.length > 1) {
     while (countup < cart.length) {
-      totalPrice = totalPrice + cart[countup].itemPrice
+      totalPrice = totalPrice + cart[countup].itemPrice;
       countup++;
     }
-    return totalPrice
+    return totalPrice;
   } else {
     return 'Your shopping cart is empty.';
   }
