@@ -63,7 +63,7 @@ function removeFromCart(item) {
   var itemFails = 0;
   while (countup < cart.length) {
     if(cart[countup].itemName === item) {
-      cart.splice(countup, (countup + 1));
+      cart.splice(countup, countup);
       countup++;
     } else {
       itemFails++;
