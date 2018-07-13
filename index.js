@@ -30,18 +30,26 @@ function viewCart() {
       sentence = sentence + `${cart[countup].itemName} at $${cart[countup].itemPrice}, `;
       countup++;
     }
-    var lastItem = `${cart[countup].itemName} at $${cart[countup].itemPrice}.`
-    return `In your cart, you have ${sentence}and ${lastItem}`
+    var lastItem = `${cart[countup].itemName} at $${cart[countup].itemPrice}.`;
+    return `In your cart, you have ${sentence}and ${lastItem}`;
   } else if(cart.length === 1){
     sentence = `${cart[countup].itemName} at $${cart[countup].itemPrice}`;
     return `In your cart, you have ${sentence}.`;
   } else if(cart.length === 0){
-    return 'Your shopping cart is empty.'
+    return 'Your shopping cart is empty.';
   }
 }
 
 function total() {
-  // write your code here
+  var countup = 0;
+  var totalPrice;
+  if (cart.length > 1) {
+    while (countup < cart.length) {
+      
+    }
+  } else {
+    return 'Your shopping cart is empty.';
+  }
 }
 
 function removeFromCart(item) {
