@@ -18,7 +18,6 @@ function setCart(c) {
 function addToCart(item) {
   var food = { itemName: item, itemPrice : getRandomInt(1, 100) };
   cart.push(food);
-  console.log(food);
   return `${item} has been added to your cart.`;
 }
 
