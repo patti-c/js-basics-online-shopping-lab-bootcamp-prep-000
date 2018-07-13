@@ -55,7 +55,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var countup = 0;
+  while (countup < cart.length) {
+    if(cart[countup].itemName === item) {
+      
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
